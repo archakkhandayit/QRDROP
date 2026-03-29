@@ -31,10 +31,4 @@ You paste a link. It gives you a QR code. You scan it with your phone. That's li
 
 ---
 
-## That's it
-
-No setup. No internet needed. No accounts. Just open the file and go.
-
----
-
 *Made with ♥ by Ak*
