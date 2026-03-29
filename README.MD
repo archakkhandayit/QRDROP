@@ -1,6 +1,6 @@
-# QRDROP 📱
+# DROPPEDQR 📱
 
-🔗 **Live:** [#](#)
+🔗 **Live:** [droppedqr.vercel.app](https://droppedqr.vercel.app)
 
 Ever had a long URL on your PC that you just wanted to open on your phone without typing the whole thing out? Yeah, that's exactly why this exists.
 
@@ -14,7 +14,7 @@ You paste a link. It gives you a QR code. You scan it with your phone. That's li
 
 ## How to use it
 
-1. Go to [#](#)
+1. Go to [droppedqr.vercel.app](droppedqr.vercel.app)
 2. Paste any link
 3. Hit **Generate**
 4. Scan with your phone camera
