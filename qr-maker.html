@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Drop — URL to QR</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="glow2"></div>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">QR<span>DROP</span></div>
+      <div class="tagline">Paste URL · Scan · Done</div>
+    </header>
+
+    <div class="card">
+      <div class="input-group">
+        <input type="url" id="url-input" placeholder="https://your-long-url.com/goes/here" autocomplete="off"
+          spellcheck="false" />
+        <button class="generate-btn" onclick="generate()">GENERATE ↗</button>
+      </div>
+      <div class="error-msg" id="error-msg">⚠ Please enter a valid URL starting with http:// or https://</div>
+
+      <div class="options">
+        <span class="opt-label">Size</span>
+        <div class="size-btns">
+          <button class="size-btn" data-size="150" onclick="setSize(this)">S</button>
+          <button class="size-btn active" data-size="220" onclick="setSize(this)">M</button>
+          <button class="size-btn" data-size="300" onclick="setSize(this)">L</button>
+          <button class="size-btn" data-size="400" onclick="setSize(this)">XL</button>
+        </div>
+        <div class="color-pick">
+          <label>Color</label>
+          <input type="color" id="qr-color" value="#000000" title="QR Color" />
+          <input type="color" id="bg-color" value="#ffffff" title="Background" />
+        </div>
+      </div>
+
+      <div class="qr-section" id="qr-section">
+        <div class="qr-frame">
+          <div id="qr-output"></div>
+        </div>
+        <div class="url-preview" id="url-preview"></div>
+        <div class="action-row">
+          <button class="action-btn btn-download" onclick="downloadQR()">⬇ Download PNG</button>
+          <button class="action-btn btn-copy" id="copy-btn" onclick="copyURL()">⎘ Copy URL</button>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="tip">
+        Point your phone camera at the QR code to open the URL instantly.<br>
+        <strong>Works with iPhone, Android, and any QR reader app.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    made with <span>♥</span> by <strong>Ak</strong>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
